@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 export default function Splash() {
-  const { randomFact, setRandomFact } = useState();
+  const { randomFact, setRandomFact } = useState({});
   async function fetchFacts() {
     await fetch(
       "https://numbersapi.p.rapidapi.com/6/21/date?fragment=true&json=true",
@@ -17,6 +17,7 @@ export default function Splash() {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
+        setRandomFact(data)
       })
       .catch((err) => {
         console.log(err);
