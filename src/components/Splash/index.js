@@ -3,6 +3,8 @@ import React, { useState } from "react";
 export default function Splash() {
   const [randomFact, setRandomFact] = useState([]);
   const [showFacts, setShowFacts] = useState(false);
+
+  //move function to its own component
   async function fetchFacts() {
     await fetch(
       "https://numbersapi.p.rapidapi.com/6/21/date?fragment=true&json=true",
@@ -29,6 +31,11 @@ export default function Splash() {
   }
   return (
     <div>
+    <div>
+      <form>
+        <input type='text'></input>
+      </form>
+    </div>
       <h1>Hello</h1>
       <button onClick={() => fetchFacts()}>Im a Button</button>
       {showFacts === true ? <p>Random Fact: {randomFact[0]}</p> : <p></p>}
