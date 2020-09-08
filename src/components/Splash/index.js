@@ -4,8 +4,7 @@ import RandomYearFact from "../RandomYearFact/index";
 
 export default function Splash() {
   const [userNumber, setUserNumber] = useState();
-  const [fact, setFact] = useState([])
-  const [showFacts, setShowFacts] = useState(false);
+  
 
 
 
@@ -19,9 +18,8 @@ export default function Splash() {
       </form>
     </div>
       <h1>Hello</h1>
-      <RandomYearFact userNumber={userNumber} setShowFacts={() => setShowFacts()} setFact={() => setFact()} />
+      <RandomYearFact userNumber={userNumber} />
       {/* <button onClick={() => console.log(userNumber)}>Im a Button</button> */}
-      {showFacts === true ? <p>Random Fact: {fact[0]}</p> : <p></p>}
       
     </div>
   );
