@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import RandomYearFact from "../RandomYearFact/index";
-// import RandomDateFact from '../RandomDateFact/index';
+import RandomMathFact from '../RandomMathFact/index';
 
 export default function Splash() {
   const [userNumber, setUserNumber] = useState();
@@ -19,6 +19,7 @@ export default function Splash() {
     </div>
       <h1>Hello</h1>
       <RandomYearFact userNumber={userNumber} />
+      <RandomMathFact userNumber={userNumber} />
       {/* <button onClick={() => console.log(userNumber)}>Im a Button</button> */}
       
     </div>
