@@ -1,14 +1,17 @@
 import React, { useState } from "react";
-import RandomDateFact from "../RandomDateFact";
+import RandomYearFact from "../RandomYearFact/index";
 // import RandomDateFact from '../RandomDateFact/index';
 
 export default function Splash() {
-  const [userNumber, setUserNumber] = useState([]);
+  const [userNumber, setUserNumber] = useState();
+  const [fact, setFact] = useState([])
   const [showFacts, setShowFacts] = useState(false);
+
+
 
   //move function to its own component
   
-  return (
+  return (  
     <div>
     <div>
       <form>
@@ -16,9 +19,9 @@ export default function Splash() {
       </form>
     </div>
       <h1>Hello</h1>
-      <RandomDateFact userNumber={userNumber} setShowFacts={setShowFacts()} />
-      <button onClick={() => console.log(userNumber)}>Im a Button</button>
-      {/* {showFacts === true ? <p>Random Fact: {randomFact[0]}</p> : <p></p>} */}
+      <RandomYearFact userNumber={userNumber} setShowFacts={() => setShowFacts()} setFact={() => setFact()} />
+      {/* <button onClick={() => console.log(userNumber)}>Im a Button</button> */}
+      {showFacts === true ? <p>Random Fact: {fact[0]}</p> : <p></p>}
       
     </div>
   );
