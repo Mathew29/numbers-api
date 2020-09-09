@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import './RandomTiviaFact.css'
 
 export default function RandomTriviaFact(props) {
     const [triviaFact, setTriviaFact] = useState([]);
@@ -30,7 +31,7 @@ export default function RandomTriviaFact(props) {
           });
       }
       return (
-        <div>
+        <div className='btn-container'>
           <button onClick={() => fetchFacts()}>Trivia Fact</button>
           {showFacts === true ? <p>Random Fact: {triviaFact[0]}</p> : <p></p>}
         </div>

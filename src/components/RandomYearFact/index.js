@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './RandomYearFact.css'
 
 export default function RandomYearFact(props) {
   const [yearFact, setYearFact] = useState([]);
@@ -30,8 +31,8 @@ export default function RandomYearFact(props) {
       });
   }
   return (
-    <div>
-      <button onClick={() => fetchFacts()}>Year Fact</button>
+    <div className='btn-container'>
+      <button className='btn' onClick={() => fetchFacts()}>Year Fact</button>
       {showFacts === true ? <p>Random Fact: {yearFact[0]}</p> : <p></p>}
     </div>
   );

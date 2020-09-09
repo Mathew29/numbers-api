@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import RandomYearFact from "../RandomYearFact/index";
 import RandomMathFact from "../RandomMathFact/index";
 import RandomTriviaFact from "../RandomTriviaFact/index";
-import "../Splash/Splash.css";
+import "./Splash.css";
 
 export default function Splash() {
   const [userNumber, setUserNumber] = useState();

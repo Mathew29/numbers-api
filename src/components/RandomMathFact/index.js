@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './RandomMathFact.css'
 
 export default function RandomMathFact(props) {
     const [numberFact, setNumberFact] = useState([]);
@@ -30,7 +31,7 @@ export default function RandomMathFact(props) {
         });
     }
     return (
-      <div>
+      <div className='btn-container'>
         <button onClick={() => fetchFacts()}>Number Fact</button>
         {showFacts === true ? <p>Random Fact: {numberFact[0]}</p> : <p></p>}
       </div>
