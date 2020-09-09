@@ -1,0 +1,23 @@
+.container{
+    min-height: 100vh;
+    margin: 0;
+    background-color: darkorchid;
+}
+.title{
+    flex: 1;
+    background-color: aqua;
+    justify-self: center;
+}
+.form-container{
+    flex: 1;
+    background-color: rgb(43, 70, 226);
+}
+.fact-container {
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+}
+.facts {
+    flex: 1;
+    justify-content: center;
+}
