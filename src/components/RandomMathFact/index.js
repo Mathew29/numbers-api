@@ -4,6 +4,7 @@ import "./RandomMathFact.css";
 export default function RandomMathFact(props) {
   async function fetchFacts() {
     if (props.showFacts) props.setShowFacts(false);
+    if(props.fact !== []) props.setFact([])
     await fetch(
       `https://numbersapi.p.rapidapi.com/${props.userNumber}/math?fragment=true&json=true`,
       {

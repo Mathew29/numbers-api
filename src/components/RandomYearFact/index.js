@@ -4,6 +4,7 @@ import "./RandomYearFact.css";
 export default function RandomYearFact(props) {
   async function fetchFacts() {
     if (props.showFacts) props.setShowFacts(false);
+    if(props.fact !== []) props.setFact([])
     await fetch(
       `https://numbersapi.p.rapidapi.com/${props.userNumber}/year?fragment=true&json=true`,
       {
