@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./RandomMathFact.css";
 
 export default function RandomMathFact(props) {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./RandomYearFact.css";
 
 export default function RandomYearFact(props) {
