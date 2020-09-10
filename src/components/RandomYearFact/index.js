@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import './RandomYearFact.css'
 
 export default function RandomYearFact(props) {
-  const [yearFact, setYearFact] = useState([]);
 
   async function fetchFacts() {
     await fetch(

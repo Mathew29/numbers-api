@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import './RandomTiviaFact.css'
 
 export default function RandomTriviaFact(props) {
-    const [triviaFact, setTriviaFact] = useState([]);
 
     async function fetchFacts() {
         await fetch(

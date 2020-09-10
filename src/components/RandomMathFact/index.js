@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import './RandomMathFact.css'
 
 export default function RandomMathFact(props) {
-    const [numberFact, setNumberFact] = useState([]);
   
     async function fetchFacts() {
       await fetch(
