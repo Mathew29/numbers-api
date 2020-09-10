@@ -1,5 +1,4 @@
 .btn-container{
-    flex: 1;
-    align-self: start;
+    margin-left: 5vh;
     background-color: darkblue;
 }
