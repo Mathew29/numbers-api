@@ -6,6 +6,8 @@ import "./Splash.css";
 
 export default function Splash() {
   const [userNumber, setUserNumber] = useState();
+  const [fact, setFact] = useState([]);
+  const [showFacts, setShowFacts] = useState(false);
 
   //move function to its own component
 
@@ -22,10 +24,11 @@ export default function Splash() {
             ></input>
           </form>
         </div>
+        {showFacts === true ? <p>Random Fact: {fact[0]}</p> : <p></p>}
         <div className="fact-container facts">
-          <RandomYearFact userNumber={userNumber} />
-          <RandomMathFact userNumber={userNumber} />
-          <RandomTriviaFact userNumber={userNumber} />
+          <RandomYearFact userNumber={userNumber} setFact={setFact} setShowFacts={setShowFacts} />
+          <RandomMathFact userNumber={userNumber} setFact={setFact} setShowFacts={setShowFacts} />
+          <RandomTriviaFact userNumber={userNumber} setFact={setFact} setShowFacts={setShowFacts} />
         </div>
       </div>
       {/* <button onClick={() => console.log(userNumber)}>Im a Button</button> */}

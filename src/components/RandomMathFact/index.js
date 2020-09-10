@@ -3,7 +3,7 @@ import './RandomMathFact.css'
 
 export default function RandomMathFact(props) {
     const [numberFact, setNumberFact] = useState([]);
-    const [showFacts, setShowFacts] = useState(false);
+    // const [showFacts, setShowFacts] = useState(false);
   
     async function fetchFacts() {
       await fetch(
@@ -21,10 +21,10 @@ export default function RandomMathFact(props) {
           console.log(data);
           for (let item in data) {
             console.log("item", data[item]);
-            setNumberFact((oldArray) => [...oldArray, data[item]]);
+            props.setFact((oldArray) => [...oldArray, data[item]]);
           }
           // send through props
-          setShowFacts(true);
+          props.setShowFacts(true);
         })
         .catch((err) => {
           console.log(err);
@@ -33,7 +33,7 @@ export default function RandomMathFact(props) {
     return (
       <div className='btn-container'>
         <button onClick={() => fetchFacts()}>Number Fact</button>
-        {showFacts === true ? <p>Random Fact: {numberFact[0]}</p> : <p></p>}
+        {/* {showFacts === true ? <p>Random Fact: {numberFact[0]}</p> : <p></p>} */}
       </div>
     );
 }
