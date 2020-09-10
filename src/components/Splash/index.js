@@ -12,19 +12,21 @@ export default function Splash() {
   return (
     <div className="container">
       <h1 className="title">Welcome to the Ramdom Fact Generator</h1>
-      <div className="form-container">
-        <form className="form">
-          <input
-            type="number"
-            placeholder="Enter Number Here..."
-            onChange={(e) => setUserNumber(e.target.value)}
-          ></input>
-        </form>
-      </div>
-      <div className="fact-container facts">
-        <RandomYearFact userNumber={userNumber} />
-        <RandomMathFact userNumber={userNumber} />
-        <RandomTriviaFact userNumber={userNumber} />
+      <div className="border">
+        <div className="form-container">
+          <form className="form">
+            <input
+              type="number"
+              placeholder="Enter Number Here..."
+              onChange={(e) => setUserNumber(e.target.value)}
+            ></input>
+          </form>
+        </div>
+        <div className="fact-container facts">
+          <RandomYearFact userNumber={userNumber} />
+          <RandomMathFact userNumber={userNumber} />
+          <RandomTriviaFact userNumber={userNumber} />
+        </div>
       </div>
       {/* <button onClick={() => console.log(userNumber)}>Im a Button</button> */}
     </div>
