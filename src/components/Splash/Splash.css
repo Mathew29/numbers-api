@@ -8,12 +8,19 @@
     background-color: aqua;
     justify-self: center;
 }
+.border{
+    margin-top: 10%;
+    margin-left: 25%;
+    width: 50%;
+    border: solid black;
+}
 .form-container{
     flex: 1;
     background-color: rgb(43, 70, 226);
 }
 .fact-container {
     display: flex;
+    margin-top: 10%;
     flex-direction: row;
     background-color: blue;
 }
