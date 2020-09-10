@@ -31,7 +31,6 @@ export default function Splash() {
           <RandomTriviaFact userNumber={userNumber} setFact={setFact} setShowFacts={setShowFacts} />
         </div>
       </div>
-      {/* <button onClick={() => console.log(userNumber)}>Im a Button</button> */}
     </div>
   );
 }

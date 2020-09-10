@@ -3,7 +3,6 @@ import './RandomTiviaFact.css'
 
 export default function RandomTriviaFact(props) {
     const [triviaFact, setTriviaFact] = useState([]);
-    // const [showFacts, setShowFacts] = useState(false);
 
     async function fetchFacts() {
         await fetch(
@@ -33,7 +32,6 @@ export default function RandomTriviaFact(props) {
       return (
         <div className='btn-container'>
           <button onClick={() => fetchFacts()}>Trivia Fact</button>
-          {/* {showFacts === true ? <p>Random Fact: {triviaFact[0]}</p> : <p></p>} */}
         </div>
       );
 }

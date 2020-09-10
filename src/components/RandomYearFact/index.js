@@ -3,7 +3,6 @@ import './RandomYearFact.css'
 
 export default function RandomYearFact(props) {
   const [yearFact, setYearFact] = useState([]);
-  // const [showFacts, setShowFacts] = useState(false);
 
   async function fetchFacts() {
     await fetch(
@@ -33,7 +32,6 @@ export default function RandomYearFact(props) {
   return (
     <div className='btn-container'>
       <button className='btn' onClick={() => fetchFacts()}>Year Fact</button>
-      {/* {showFacts === true ? <p>Random Fact: {yearFact[0]}</p> : <p></p>} */}
     </div>
   );
 }
