@@ -26,9 +26,9 @@ export default function Splash() {
         </div>
         {showFacts === true ? <p>Random Fact: {fact[0]}</p> : <p></p>}
         <div className="fact-container facts">
-          <RandomYearFact userNumber={userNumber} setFact={setFact} setShowFacts={setShowFacts} />
-          <RandomMathFact userNumber={userNumber} setFact={setFact} setShowFacts={setShowFacts} />
-          <RandomTriviaFact userNumber={userNumber} setFact={setFact} setShowFacts={setShowFacts} />
+          <RandomYearFact userNumber={userNumber} setFact={setFact} setShowFacts={setShowFacts} showFacts={showFacts} />
+          <RandomMathFact userNumber={userNumber} setFact={setFact} setShowFacts={setShowFacts} showFacts={showFacts} />
+          <RandomTriviaFact userNumber={userNumber} setFact={setFact} setShowFacts={setShowFacts} showFacts={showFacts} />
         </div>
       </div>
     </div>

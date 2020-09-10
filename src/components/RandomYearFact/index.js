@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import './RandomYearFact.css'
+import "./RandomYearFact.css";
 
 export default function RandomYearFact(props) {
-
   async function fetchFacts() {
+    if (props.showFacts) props.setShowFacts(false);
     await fetch(
       `https://numbersapi.p.rapidapi.com/${props.userNumber}/year?fragment=true&json=true`,
       {
@@ -29,8 +29,10 @@ export default function RandomYearFact(props) {
       });
   }
   return (
-    <div className='btn-container'>
-      <button className='btn' onClick={() => fetchFacts()}>Year Fact</button>
+    <div className="btn-container">
+      <button className="btn" onClick={() => fetchFacts()}>
+        Year Fact
+      </button>
     </div>
   );
 }
