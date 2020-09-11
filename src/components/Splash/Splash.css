@@ -1,11 +1,9 @@
 .container{
     min-height: 100vh;
     margin: 0;
-    background-color: darkorchid;
 }
 .title{
     flex: 1;
-    background-color: aqua;
     justify-self: center;
 }
 .border{
@@ -16,7 +14,7 @@
 }
 .form-container{
     flex: 1;
-    background-color: rgb(43, 70, 226);
+    background-color:red;
 }
 .fact-container {
     display: flex;

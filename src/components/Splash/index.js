@@ -13,7 +13,7 @@ export default function Splash() {
 
   return (
     <div className="container">
-      <h1 className="title">Welcome to the Ramdom Fact Generator</h1>
+      <h1 className="title">Welcome to the Random Fact Generator</h1>
       <div className="border">
         <div className="form-container">
           <form className="form">
