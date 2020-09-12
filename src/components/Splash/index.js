@@ -25,29 +25,35 @@ export default function Splash() {
               ></input>
             </form>
           </div>
-          {showFacts === true ? <p className='fact'>Random Fact: {fact[0]}</p> : <p></p>}
-          <div className="fact-container facts">
-            <RandomYearFact
-              userNumber={userNumber}
-              setFact={setFact}
-              setShowFacts={setShowFacts}
-              showFacts={showFacts}
-              fact={fact}
-            />
-            <RandomMathFact
-              userNumber={userNumber}
-              setFact={setFact}
-              setShowFacts={setShowFacts}
-              showFacts={showFacts}
-              fact={fact}
-            />
-            <RandomTriviaFact
-              userNumber={userNumber}
-              setFact={setFact}
-              setShowFacts={setShowFacts}
-              showFacts={showFacts}
-              fact={fact}
-            />
+          {showFacts === true ? (
+            <p className="fact">Random Fact: {fact[0]}</p>
+          ) : (
+            <p></p>
+          )}
+          <div className="fact-container">
+            <div className='facts'>
+              <RandomYearFact
+                userNumber={userNumber}
+                setFact={setFact}
+                setShowFacts={setShowFacts}
+                showFacts={showFacts}
+                fact={fact}
+              />
+              <RandomMathFact
+                userNumber={userNumber}
+                setFact={setFact}
+                setShowFacts={setShowFacts}
+                showFacts={showFacts}
+                fact={fact}
+              />
+              <RandomTriviaFact
+                userNumber={userNumber}
+                setFact={setFact}
+                setShowFacts={setShowFacts}
+                showFacts={showFacts}
+                fact={fact}
+              />
+            </div>
           </div>
         </div>
       </div>
