@@ -4,7 +4,7 @@
 }
 
 .border {
-  width: 60%;
+  width: 50%;
   margin: 16px auto;
   border: 1px solid #eee;
   box-shadow: 0 2px 3px #ccc;
@@ -20,23 +20,12 @@
 input {
   width: 20% !important;
 }
-.showingFacts {
-  position: absolute;
-}
 /* .title {
   flex: 1;
   justify-self: center;
 } */
-/* .border {
-  width: 100%;
-  display: flex;
-} */
-/* .position {
-  margin: auto;
-  border: solid black;
-} */
 .fact-container {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .facts {
   display: flex;
@@ -44,5 +33,6 @@ input {
   justify-content: center;
 }
 .fact {
+  margin-top: 5%;
   position: relative;
 }
