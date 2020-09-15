@@ -2,9 +2,16 @@
     margin-left: 5vh;
 }
 
-.btn {
+.btn-year {
     font: inherit;
     border: 1px solid;
     padding: 4px;
     cursor: pointer;
+    background-color: blue;
+    color: white;
+}
+
+.btn-year:hover{
+    background-color: lightblue;
+    color: black;
 }

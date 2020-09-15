@@ -2,9 +2,16 @@
     margin-left: 5vh;
 }
 
-.btn {
+.btn-trivia {
     font: inherit;
     border: 1px solid;
     padding: 4px;
     cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+.btn-trivia:hover {
+    background-color: pink;
+    color: black;
 }

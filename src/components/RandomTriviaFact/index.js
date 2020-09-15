@@ -31,7 +31,7 @@ export default function RandomTriviaFact(props) {
   }
   return (
     <div className="btn-container">
-      <button className='btn' onClick={() => fetchFacts()}>Trivia Fact</button>
+      <button className='btn-trivia' onClick={() => fetchFacts()}>Trivia Fact</button>
     </div>
   );
 }

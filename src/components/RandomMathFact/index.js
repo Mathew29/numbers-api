@@ -31,7 +31,7 @@ export default function RandomMathFact(props) {
   }
   return (
     <div className="btn-container">
-      <button className='btn' onClick={() => fetchFacts()}>Number Fact</button>
+      <button className='btn-math' onClick={() => fetchFacts()}>Number Fact</button>
     </div>
   );
 }

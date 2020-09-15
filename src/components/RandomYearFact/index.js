@@ -31,7 +31,7 @@ export default function RandomYearFact(props) {
   }
   return (
     <div className="btn-container">
-      <button className="btn" onClick={() => fetchFacts()}>
+      <button className="btn-year" onClick={() => fetchFacts()}>
         Year Fact
       </button>
     </div>

@@ -2,9 +2,16 @@
     margin-left: 5vh;
 }
 
-.btn {
+.btn-math {
     font: inherit;
     border: 1px solid;
     padding: 4px;
     cursor: pointer;
+    background-color: green;
+    color: white;
+}
+
+.btn-math:hover {
+    background-color: lightgreen;
+    color: black;
 }
