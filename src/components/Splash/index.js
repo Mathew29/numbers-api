@@ -16,22 +16,19 @@ export default function Splash() {
       <h1 className="title">Welcome to the Random Fact Generator</h1>
       <div className="border">
         <div className="position">
-          <div className="form-container">
-            <form className="form">
-              <input
-                type="number"
-                placeholder="Enter Number Here..."
-                onChange={(e) => setUserNumber(e.target.value)}
-              ></input>
-            </form>
-          </div>
+          <input
+            type="number"
+            placeholder="Enter Number Here..."
+            onChange={(e) => setUserNumber(e.target.value)}
+          ></input>
+
           {showFacts === true ? (
             <p className="fact">Random Fact: {fact[0]}</p>
           ) : (
             <p></p>
           )}
           <div className="fact-container">
-            <div className='facts'>
+            <div className="facts">
               <RandomYearFact
                 userNumber={userNumber}
                 setFact={setFact}
