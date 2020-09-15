@@ -10,6 +10,10 @@ export default function Splash() {
   const [showFacts, setShowFacts] = useState(false);
 
   //move function to its own component
+  let showingFacts = null;
+  if (showFacts === true) {
+    showingFacts = <p className="fact">{fact[0]}</p>;
+  }
 
   return (
     <div className="container">
@@ -21,10 +25,8 @@ export default function Splash() {
             placeholder="Enter Number Here..."
             onChange={(e) => setUserNumber(e.target.value)}
           ></input>
-
-          {showFacts === true ? (
-            <p className="fact">{fact[0]}</p>
-          ) : <p className="fact"></p>}
+          <div className="showingFacts">{showingFacts}</div>
+          {/* {showFacts === true ? <p className="fact">{fact[0]}</p> : null} */}
           <div className="fact-container">
             <div className="facts">
               <RandomYearFact
