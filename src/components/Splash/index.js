@@ -22,7 +22,7 @@ export default function Splash() {
           <p className="fact">{fact[0]}</p>
         ) : (
           <p className="fact">
-            Click one of the buttons below to get a random fact
+            Click one of the buttons below to receive a fact
           </p>
         )}
         <div className="fact-container">
