@@ -24,9 +24,7 @@ export default function Splash() {
 
           {showFacts === true ? (
             <p className="fact">Random Fact: {fact[0]}</p>
-          ) : (
-            <p></p>
-          )}
+          ) : null}
           <div className="fact-container">
             <div className="facts">
               <RandomYearFact
