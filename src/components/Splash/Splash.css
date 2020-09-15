@@ -6,6 +6,7 @@
 .border {
   width: 50%;
   margin: 16px auto;
+  margin-top: 10%;
   border: 1px solid #eee;
   box-shadow: 0 2px 3px #ccc;
   padding: 16px;
@@ -20,10 +21,9 @@
 input {
   width: 20% !important;
 }
-/* .title {
-  flex: 1;
-  justify-self: center;
-} */
+.title {
+  margin-top: 5%;
+}
 .fact-container {
   margin-top: 5%;
 }
