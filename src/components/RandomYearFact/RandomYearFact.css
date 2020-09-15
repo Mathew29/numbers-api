@@ -1,3 +1,10 @@
 .btn-container{
     margin-left: 5vh;
 }
+
+.btn {
+    font: inherit;
+    border: 1px solid;
+    padding: 4px;
+    cursor: pointer;
+}
